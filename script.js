@@ -18,6 +18,7 @@ var data = {
   nrPuzzless: 4,
   schema: shema,
   difficulity: difficulity,
+  gametime: 1000,
   time: 1000,
   points: 0,
   endgame: 0,
@@ -44,7 +45,7 @@ new Vue({
       fillSmallCanva(data.schema, data.puzzlesPos, data.options[1]);
 
       data.stan = 1;
-      data.time = 1000;
+      data.time = parseInt(data.gametime);
       data.endgame = 0;
       data.points = 0;
       this.interval = setInterval(this._tick, 100);

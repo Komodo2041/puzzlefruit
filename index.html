@@ -31,6 +31,12 @@
             <label>Poziom trudności:</label>
             <select v-model="options[0]" class="form form-control w200">
                 <option v-for="diff in difficulity " :value="diff[0]">{{diff[1]}}</option>
+            </select><br />
+            <label>Czas gry:</label>
+            <select v-model="gametime" class="form form-control w200">
+                <option value="1000"> 100 s</option>
+                <option value="2000"> 200 s</option>
+                <option value="3000"> 300 s</option>
             </select>
         </div>
         <div class="mt10 w100">
