@@ -26,7 +26,7 @@ var data = {
   step: 0,
   isGoodFit: 0,
   goodPuzzle: 0,
-  topY: 0
+
 };
 
 
